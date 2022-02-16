@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex justify-between items-center container mx-auto py-6">
+    <div class="flex justify-between items-center container mx-auto py-4">
 
       <div class="flex">
         <UiSharedLogo class="mr-6" />
