@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img :src="require('@/assets/images/logo.svg') " alt="" width="100%">
+    <img :src="require('@/assets/images/logo.svg') " alt="" width="120px">
   </div>
 </template>
 
