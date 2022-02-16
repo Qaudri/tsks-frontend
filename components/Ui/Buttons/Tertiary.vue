@@ -1,11 +1,8 @@
 <template>
   <div>
-    <div class="flex">
-      <div class="flex">
-        <UiSharedLogo />
-
-      </div>
-    </div>
+    <button class="py-2 px-4 text-white font-semibold text-base">
+      <slot />
+    </button>
   </div>
 </template>
 
