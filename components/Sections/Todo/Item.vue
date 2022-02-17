@@ -16,7 +16,7 @@
             
           </div>
 
-          <div  :class="is_completed ? 'opacity-40' : 'opacity-100' " 
+          <div  :class="is_completed ? 'opacity-30' : 'opacity-100' " 
            class="text-white font-semibold text-base md:text-lg mx-4">
             {{Todo}}
           </div>

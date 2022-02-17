@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <!-- <div class="h-screen sticky">
+    <div class="h-screen sticky">
 
       <div>
         <SectionsCommonHeader />
@@ -11,11 +11,11 @@
         <SectionsHero />
       </div>
 
-    </div> -->
- 
-    <div>
-      <SectionsTodoContainer />
     </div>
+ 
+    <!-- <div>
+      <SectionsTodoContainer />
+    </div> -->
 
   </div>
 </template>

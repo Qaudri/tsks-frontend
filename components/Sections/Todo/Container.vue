@@ -15,11 +15,7 @@
 
       <div class="flex items-center justify-center mx-auto">
         <div>
-          <SectionsTodoItem Todo="Read on Nuxt.js slot usage" />
-          <SectionsTodoItem id="listItem"/>
-          <SectionsTodoItem id="listItem"/>
-          <SectionsTodoItem id="listItem"/>
-          <SectionsTodoItem id="listItem"/>
+          <SectionsTodoItem v-for="todo in todos" :key="todo.id" :Todo="todo.title" />
 
           <div>
             <img :src=" require('@/assets/images/add.svg') " 
@@ -36,14 +32,35 @@
 <script>
 export default {
   data(){
+    return{
+      todos:[
+        {
+          id:1,
+          title: "Create full home page"
+        },
 
-  },
+        {
+          id:2,
+          title: "Refactor entire build"
+        },
 
-  methods: {
-    addListItem(){
-      this.clone = node.cloneNode(true);
+        {
+          id:3,
+          title: "Create login verification and authentication"
+        },
+
+        {
+          id:4,
+          title: "Push the codebase to Github"
+        },
+
+        {
+          id:5,
+          title: "Go to sleep"
+        },
+      ],
     }
-  }
+  },
 }
 </script>
 
