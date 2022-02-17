@@ -16,12 +16,12 @@
 
       <div class="max-w-max mx-auto my-16">
 
-        <a href="/signup" class="text-white bg-red-500 py-3 px-6 font-semibold rounded-lg 
+        <a href="/signup" class="text-white bg-pink-700 py-3 px-6 font-semibold rounded-lg 
         mx-6">
           Get Started
         </a>
 
-        <a href="" class="text-white bg-gray-500 py-3 px-6 font-semibold rounded-lg mx-6">
+        <a href="" class="text-white bg-gray-800 py-3 px-6 font-semibold rounded-lg mx-6">
           Learn More
         </a>
 

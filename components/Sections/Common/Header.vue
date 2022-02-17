@@ -18,7 +18,7 @@
         </a>
 
         <a href="" class="text-white font-normal text-base py-2 px-4 border-2
-         border-gray-500 rounded-lg">
+         border-gray-800 rounded-lg bg-transparent hover:bg-pink-600 hover:border-transparent">
           Sign Up
         </a>
 
