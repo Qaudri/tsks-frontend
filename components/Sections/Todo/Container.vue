@@ -15,7 +15,7 @@
 
       <div class="flex items-center justify-center mx-auto">
         <div>
-          <SectionsTodoItem id="listItem"/>
+          <SectionsTodoItem Todo="Read on Nuxt.js slot usage" />
           <SectionsTodoItem id="listItem"/>
           <SectionsTodoItem id="listItem"/>
           <SectionsTodoItem id="listItem"/>
