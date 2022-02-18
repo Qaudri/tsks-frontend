@@ -1,8 +1,8 @@
 <template>
-  <div class="flex justify-center item-center">
+  <div class="flex justify-center items-center h-screen">
     <div>
 
-      <div>
+      <div class="mt-12">
 
         <h1 class="font-bold text-white text-6xl text-center my-4">
           Tsks, just tasks.

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="absolute z-10 w-full">
     <div class="flex justify-between items-center container mx-auto py-4">
 
       <div class="flex">
