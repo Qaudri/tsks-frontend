@@ -22,7 +22,7 @@
           </div>
 
           <div>
-            <img @click="emitDeleteEvent(Todo.id)" :class="taskItem ? 'block' : 'hidden' "
+            <img @click="emitDeleteEvent(Index)" :class="taskItem ? 'block' : 'hidden' "
             :src="require('@/assets/images/delete.svg') " title="Delete this item" 
             class="mx-4 h-6 w-6 cursor-pointer items-end" />
           </div>
@@ -48,6 +48,10 @@ export default {
       title: String,
       default: 'New item',
       type: Object
+    },
+
+    Index: {
+      type: Number
     }
 
   },

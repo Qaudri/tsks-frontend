@@ -4,6 +4,8 @@
 
     </div>
 
+
+    <DialogsSimple />
     <div class="flex h-screen">
 
       <div class="hidden bg-gray-800 w-1/6 px-4 h-full ">
@@ -37,7 +39,7 @@ export default {
       todos:[
         {
           id:1,
-          title: "Create full home page"
+          title: "Create the full home page"
         },
 
         {
@@ -60,12 +62,16 @@ export default {
           title: "Go to sleep"
         },
       ],
-    }
+    } 
   },
 
   methods: {
     showDeleteDialog(Todo){
-      alert("Are you sure you want to delete " + Todo)
+
+
+      this.todos.splice(Todo, 1)
+      console.log("Item deleted successfully")
+
     }
   }
 }

@@ -14,8 +14,8 @@
           Organising your daily tasks can improve productivity & lead to enhanced quality work.
         </p>
 
-        <div class="my-16 mx-auto">
-          <button class="text-white bg-gray-800 py-3 px-6 font-semibold rounded-lg max-w-full mx-auto " >
+        <div class="my-16 flex justify-center">
+          <button class="text-white bg-gray-800 py-3 px-6 font-semibold rounded-lg" >
             Check out our blog now
           </button>
         </div>
