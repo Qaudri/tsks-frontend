@@ -3,9 +3,10 @@
 
     <div class="flex items-center justify-center w-screen h-screen">
 
-      <div>
+      <div class="">
+
         <h1 class="font-bold text-white text-6xl text-center my-4">
-          Tsks isn't a tool, it's a Habit.
+          Tsks isn't a tool, it's a <span class="text-pink-500">Habit.</span> 
         </h1>
 
         <p class="text-white font-normal text-lg max-w-xl text-center mx-auto my-4">
@@ -14,7 +15,7 @@
         </p>
 
         <div class="my-16 mx-auto">
-          <button class="text-white bg-gray-800 py-3 px-6 font-semibold rounded-lg " >
+          <button class="text-white bg-gray-800 py-3 px-6 font-semibold rounded-lg max-w-full mx-auto " >
             Check out our blog now
           </button>
         </div>

@@ -15,14 +15,15 @@
 
       <div class="flex items-center justify-center mx-auto">
         <div>
-          <SectionsTodoItem v-for="todo in todos" :key="todo.id" :Todo="todo.title" />
+          <SectionsTodoItem @deleteTodo="showDeleteDialog" v-for="(todo, index) in todos" 
+          :key="todo.id" :Todo="todo" :Index="index" />
 
           <div>
             <img :src=" require('@/assets/images/add.svg') " 
             alt="" class="w-12 h-12 mx-auto" />
           </div>
         </div>
-      </div>
+      </div> 
 
     </div>
 
@@ -61,6 +62,12 @@ export default {
       ],
     }
   },
+
+  methods: {
+    showDeleteDialog(Todo){
+      alert("Are you sure you want to delete " + Todo)
+    }
+  }
 }
 </script>
 
