@@ -5,17 +5,17 @@
         <div class="p-4 bg-gray-800 flex justify-between items-center rounded-xl my-6 md:w-1/2 w-5/6">
 
           <div class="flex">
-            <img :class="is_completed ? 'block' : 'hidden' " @click="taskComplete"
+            <img :class="is_completed ? 'block' : 'hidden' " 
             :src="require('@/assets/images/checked_checkbox.svg')" alt="" class="h-6 w-6">
 
 
-            <div :class="is_completed ? 'hidden' : 'block'"  @click="taskComplete" 
+            <div :class="is_completed ? 'hidden' : 'block'" @click="emitViewEvent(Todo)"
             title="Mark as complete"
             class="h-6 w-6 border-2 border-pink-500 bg-transparent rounded-md cursor-pointer">
               
             </div>
 
-            <div  :class="is_completed ? 'opacity-30' : 'opacity-100' " 
+            <div  @click="emitViewEvent(Todo)"
             class="text-white font-semibold text-base md:text-lg mx-4">
               {{Todo.title}}
             </div>
@@ -70,6 +70,10 @@ export default {
 
     emitDeleteEvent(todo_id){
       this.$emit("deleteTodo", todo_id)
+    },
+
+    emitViewEvent(todo){
+      this.$emit("viewTodo", todo)
     }
   }
 }
