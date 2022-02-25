@@ -22,8 +22,8 @@
           </div>
 
           <div>
-            <img @click="emitDeleteEvent(Index)" :class="taskItem ? 'block' : 'hidden' "
-            :src="require('@/assets/images/delete.svg') " title="Delete this item" 
+            <img @click="emitDeleteEvent(Index)" 
+            :src="require('@/assets/images/delete.svg') " 
             class="mx-4 h-6 w-6 cursor-pointer items-end" />
           </div>
 
@@ -44,6 +44,12 @@ export default {
 
   props: {
 
+    is_completed: {
+      type: Boolean,
+      default: false,
+    
+    },
+
     Todo: {
       title: String,
       default: 'New item',
@@ -58,8 +64,6 @@ export default {
 
   data(){
     return{
-      is_completed: false,
-      taskItem: true
     }
   },
 

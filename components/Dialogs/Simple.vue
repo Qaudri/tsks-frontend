@@ -5,22 +5,23 @@
 
       <div>
         <div class="border-b text-xl pb-4 font-semibold flex justify-between">
+
           <slot name="title" />
 
-          <button>
-            <img :src="require('@/assets/images/delete.svg')" alt="">
-          </button>
+          <div class="">
+
+            <button @click="emitCloseEvent">
+              <img :src="require('@/assets/images/close.svg') " alt="" width="35px" />
+            </button>
+
+          </div>
+
         </div>
 
         <div class="my-4">
           <slot />
         </div>
         
-        <div class="flex justify-center mt-8">
-          <button @click="emitCloseEvent" class="px-6 py-3 rounded-lg bg-pink-500 text-white font-semibold text-base">
-            {{button_title}}
-          </button>
-        </div>
       </div>
 
     </div>
@@ -32,10 +33,7 @@ export default {
   props: {
     openDialog: Boolean,
 
-    button_title: {
-      type: String,
-      default: "Button"
-    }
+    button: String
 
   },
 

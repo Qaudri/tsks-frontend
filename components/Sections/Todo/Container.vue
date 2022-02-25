@@ -17,18 +17,20 @@
           <div class="my-2">
             <label class="font-semibold">Todo Title</label>
             <input v-model="form.todo_title" type="text" name="" id="" 
-            class="my-4 w-full h-20 border-1 py-4 px-6 break-words border-gray-800 rounded-md">
+            class="my-4 w-full border-1 py-4 px-6 break-words border-gray-800 rounded-md">
           </div>
 
           <div class="my-2 ">
             <label for="" class="font-semibold">Todo Content</label>
             <input v-model="form.todo_content" type="text" name="" id="" 
-            class="my-4 w-full h-20 border-1 py-4 px-6 break-words border-gray-800 rounded-md focus:border-pink-500 focus:border-2">
+            class="my-4 w-full h-24 border-1 py-4 px-6 break-words border-gray-800 rounded-md focus:border-pink-500 focus:border-2">
           </div>
 
-          <button class="">
-            
-          </button>
+          <div class="flex justify-center mt-10">
+            <button class="px-6 py-3 rounded-lg bg-pink-500 text-white font-semibold text-base">
+              Add New Item
+            </button>
+          </div>
 
         </form>
       </div>
@@ -46,6 +48,14 @@
       <div v-if="selected_todo">{{selected_todo.content}}
         
       </div>
+
+      <div class="flex justify-center mt-10">
+        <button @click="taskComplete"
+         class="px-6 py-3 rounded-lg bg-pink-500 text-white font-semibold text-base">
+          Mark as complete
+        </button>
+      </div>
+
     </DialogsSimple> 
 
 
@@ -107,7 +117,7 @@ export default {
         {
           id:3,
           title: "Create login verification and authentication",
-          content: "Create a login page and a verfication process foe the user. Make sure the process is thorough and clean."
+          content: "Create a login page and a verfication process for the user. Make sure the process is thorough and clean."
         },
 
         {
@@ -128,7 +138,6 @@ export default {
   methods: {
     showDeleteDialog(Todo){
 
-
       this.todos.splice(Todo, 1)
       console.log("Item deleted successfully")
 
@@ -145,6 +154,11 @@ export default {
     showTodoDetailsDialog(Todo){
       this.selected_todo = Todo;
       this.toggleTodoDetailsDialog()
+    },
+
+    taskComplete(){
+      this.toggleTodoDetailsDialog();
+      this.is_completed = true
     },
 
     submitAddNewTodoForm(){
